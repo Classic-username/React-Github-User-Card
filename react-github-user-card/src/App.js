@@ -9,8 +9,12 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    
+    fetch('https://api.github.com/users')
+      .then(res => res.json())
+      .then(userData => this.setState({ user: userData }))
+      .catch(err => console.log(err, 'error'))
   }
+  
 
   render() {
     return (
