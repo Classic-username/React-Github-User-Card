@@ -4,7 +4,7 @@ import { thisExpression } from '@babel/types';
 
 export default function FollowerButton(props) {
 
-    console.log(props,'inside followbutton')
+    // console.log(props,'inside followbutton')
 
     // const AxiosProps = props.userArray.forEach(url => {
     //     Axios
@@ -18,10 +18,10 @@ export default function FollowerButton(props) {
 
 
     
-    useEffect(() => {
-        console.log(AxiosProps)
+    // useEffect(() => {
+    //     console.log(AxiosProps)
 
-    }, [])
+    // }, [])
 
     return(
         <div></div>
